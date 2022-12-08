@@ -15261,7 +15261,7 @@ webpackJsonp(
         staticBaseUrl: "/site/",
         staticUrl: "/static/",
         staticCssUrl: "",
-        routeBasePath: "/site/",
+        routeBasePath: window.location.pathname.split("site")[0] + "site/",
         domain: "localhost",
         template: "default",
         amapUrl:
