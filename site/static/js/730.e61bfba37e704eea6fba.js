@@ -257,118 +257,8 @@ webpackJsonp([730], {
             );
           },
           save: function () {
-            var t = this;
-            this.info;
-            try {
-              if (
-                (1 == this.info.sfzs &&
-                  ((this.info.bzxyy = ""), (this.info.bzxyy_other = "")),
-                "0" == this.info.sfzs &&
-                  6 != this.info.bzxyy &&
-                  (this.info.bzxyy_other = ""),
-                1 == this.info.brsfzc &&
-                  ((this.info.tw = ""),
-                  (this.info.sfcxzz = ""),
-                  (this.info.zdjg = ""),
-                  (this.info.zdjg_other = ""),
-                  (this.info.sfgl = ""),
-                  (this.info.gldd = ""),
-                  (this.info.gldd_other = ""),
-                  (this.info.glyy = ""),
-                  (this.info.glyy_other = ""),
-                  (this.info.gl_start = ""),
-                  (this.info.gl_end = ""),
-                  (this.info.sfmqjc = "")),
-                "0" == this.info.brsfzc &&
-                  "1" != this.info.sfcxzz &&
-                  ((this.info.zdjg = ""), (this.info.zdjg_other = "")),
-                "0" == this.info.brsfzc &&
-                  "1" == this.info.sfcxzz &&
-                  "3" != this.info.zdjg &&
-                  (this.info.zdjg_other = ""),
-                "0" == this.info.brsfzc &&
-                  "1" != this.info.sfgl &&
-                  ((this.info.glyy = ""),
-                  (this.info.glyy_other = ""),
-                  (this.info.gl_start = ""),
-                  (this.info.gl_end = ""),
-                  (this.info.sfmqjc = "")),
-                "0" == this.info.brsfzc &&
-                  "0" == this.info.sfgl &&
-                  "3" != this.info.glyy &&
-                  (this.info.glyy_other = ""),
-                "" == this.info.sfzc_14 &&
-                  ((this.info.sfqw_14 = ""),
-                  (this.info.sfqw_14_remark = ""),
-                  (this.info.sfzgfx = ""),
-                  (this.info.sfzgfx_remark = ""),
-                  (this.info.sfjc_14 = ""),
-                  (this.info.sfjc_14_remark = ""),
-                  (this.info.sfjcqz_14 = ""),
-                  (this.info.sfjcqz_14_remark = ""),
-                  (this.info.sfgtjz_14 = ""),
-                  (this.info.sfgtjz_14_remark = ""),
-                  (this.info.szsqqz = ""),
-                  (this.info.sfyqk = "")),
-                "0" == this.info.sfzc_14 &&
-                  "1" != this.info.sfqw_14 &&
-                  (this.info.sfqw_14_remark = ""),
-                "0" == this.info.sfzc_14 &&
-                  "1" != this.info.sfzgfx &&
-                  (this.info.sfzgfx_remark = ""),
-                "0" == this.info.sfzc_14 &&
-                  "1" != this.info.sfjc_14 &&
-                  (this.info.sfjc_14_remark = ""),
-                "0" == this.info.sfzc_14 &&
-                  "1" != this.info.sfjcqz_14 &&
-                  (this.info.sfjcqz_14_remark = ""),
-                "0" == this.info.sfzc_14 &&
-                  "1" != this.info.sfgtjz_14 &&
-                  (this.info.sfgtjz_14_remark = ""),
-                1 == this.info.szdd && (this.info.gwdz = ""),
-                1 != this.info.szdd &&
-                  ((this.info.address = ""), (this.info.geo_api_info = "")),
-                1 != this.info.is_move &&
-                  ((this.info.move_reason = ""), (this.info.move_remark = "")),
-                "0" == this.info.is_move &&
-                  "4" != this.info.move_reason &&
-                  (this.info.move_remark = ""),
-                this.ajaxLock)
-              )
-                return this.wapalert("数据提交中"), !1;
-              var s;
-              (this.ajaxLock = !0),
-                this.waploading("", "数据提交中, 请稍候..."),
-                this.xgh &&
-                  (s = {
-                    xgh: this.xgh,
-                    group_id: this.group_id,
-                  }),
-                this.appFetch(
-                  {
-                    url: "buaaStudentNcovdailySave",
-                    method: "POST",
-                    data: a()({}, this.info, s),
-                  },
-                  function (s) {
-                    (t.ajaxLock = !1),
-                      t.waploading("hide"),
-                      0 == s.e
-                        ? ((t.msg = "提交信息成功(Submitted)"),
-                          (t.icontip = "success"),
-                          (t.hasFlag = 1))
-                        : ((t.msg = s.m), (t.icontip = "err"));
-                  },
-                  function (s) {
-                    (t.ajaxLock = !1),
-                      t.waploading("hide"),
-                      (t.msg = "网络错误！"),
-                      (t.icontip = "err");
-                  }
-                );
-            } catch (t) {
-              alert(t);
-            }
+            window.location.href =
+              "https://www.bilibili.com/video/BV1GJ411x7h7";
           },
           valid: function (t) {
             return "" == t.sfzs
@@ -633,75 +523,24 @@ webpackJsonp([730], {
                 ),
                 !1);
           },
-          getInfo: function (t) {
-            var s,
-              i = this;
-            t &&
-              (s = {
-                xgh: t,
-                group_id: this.group_id,
+          getInfo: function () {
+            var i = this;
+            (i.hasFlag = false),
+              (i.setting = {
+                name: "",
+                desc:
+                  "温馨提示：<br>\n1、少外出、不聚集， 戴口罩、勤洗手，开窗通风，发热就诊<br>\n2、每日填报信息仅用于疫情防控工作<br>\n                            ",
+                area: "",
+                title: "北航师生报平安系统",
               }),
-              this.appFetch(
-                {
-                  url: "buaaStudentNcovdaily",
-                  method: "GET",
-                  data: s,
-                },
-                function (t) {
-                  if (((i.img = ""), (i.dec = ""), 0 == t.e)) {
-                    var s = t.d;
-                    i.date = s.date;
-                    var e,
-                      a = s.info,
-                      n = s.uinfo;
-                    if (
-                      ((i.setting = s.setting),
-                      (i.hasFlag = s.hasFlag),
-                      (i.uinfo = s.uinfo),
-                      (document.title = i.setting.title),
-                      (i.oldInfo = s.oldInfo),
-                      (i.ontime = s.ontime),
-                      i.$set(i.info, "realname", n.realname),
-                      i.$set(i.info, "number", n.role.number),
-                      a)
-                    )
-                      (i.info = o()(i.info, a)),
-                        2 == i.info.szdd &&
-                          "" == i.info.area &&
-                          ((i.info.area = "港澳台或国外"),
-                          (i.info.city = "港澳台或国外"),
-                          (i.info.province = "港澳台或国外")),
-                        i.info.area &&
-                          1 == i.info.szdd &&
-                          ((e = i.info.area.split(" ")),
-                          (i.info.province = e[0] ? e[0] : ""),
-                          i.handleChangeCity(i.info.province),
-                          ["北京市", "上海市", "重庆市", "天津市"].indexOf(
-                            i.info.province
-                          ) > -1
-                            ? ((i.info.city = i.info.province),
-                              i.handleChangeArea(i.info.city))
-                            : ((i.info.city = e[1] ? e[1] : ""),
-                              i.handleChangeArea(i.info.city)),
-                          (i.myarea = e[2] ? e[2] : "")),
-                        console.log(i.info, "this.info");
-                    (i.show = !0), i.$nextTick(function () {});
-                  } else
-                    (i.show = !1),
-                      (i.nonetworkimg = !0),
-                      (i.nonetworktext = t.e + "</br>" + t.m),
-                      (i.nonetworkimg = "/site/static/images/network1.png");
-                },
-                function (t) {
-                  (i.img = ""),
-                    (i.dec = ""),
-                    (i.show = !1),
-                    (i.nonetworkimg = !0),
-                    (i.nonetworktext = resp.e + "</br>" + resp.m),
-                    (i.nonetworkimg = "/site/static/images/network1.png");
-                },
-                1
-              );
+              (i.date = moment().format("YYYY-MM-DD")),
+              (i.ontime = true),
+              i.$set(i.info, "realname", "李田所"),
+              i.$set(i.info, "number", "19190810"),
+              (document.title = i.setting.title),
+              (i.show = !0),
+              (i.img = ""),
+              i.$nextTick(function () {});
           },
           initSelect: function () {
             var t = this;
