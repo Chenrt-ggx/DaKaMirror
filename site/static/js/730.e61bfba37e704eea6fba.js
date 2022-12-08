@@ -70,8 +70,10 @@ webpackJsonp([730], {
             xgh: "",
             info: l,
             uinfo: {
-              realname: "",
-              role: {},
+              realname: "李田所",
+              role: {
+                number: "19190810",
+              },
             },
             ajaxLock: !1,
             readonly: !1,
@@ -535,8 +537,6 @@ webpackJsonp([730], {
               }),
               (i.date = moment().format("YYYY-MM-DD")),
               (i.ontime = true),
-              i.$set(i.info, "realname", "李田所"),
-              i.$set(i.info, "number", "19190810"),
               (document.title = i.setting.title),
               (i.show = !0),
               (i.img = ""),
