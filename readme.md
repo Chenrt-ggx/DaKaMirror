@@ -1,5 +1,7 @@
 # DaKa Mirror
 
+![license](https://img.shields.io/github/license/Chenrt-ggx/DaKaMirror)
+
 > 以下内容由 ChatGPT 生成。
 
 ## 为每日“师生健康填报”写一篇悼念文
